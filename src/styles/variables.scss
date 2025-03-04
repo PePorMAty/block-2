@@ -1,3 +1,9 @@
-$font-main: 'Montserrat', sans-serif;
+@use 'fonts' as *;
 
-$someColor: #000000;
+$font-main: 'Jost', sans-serif;
+
+$whiteColor: #fff;
+$redColor: #d52027;
+$hoverRedColor: #be1d22;
+$darkColor: #141024;
+$hoverDarkColor: #1c192c;

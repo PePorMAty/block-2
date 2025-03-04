@@ -4,7 +4,62 @@
   font-family: $font-main;
 }
 
-.heading {
-  font-size: 50px;
-  color: red;
+html,
+body {
+  min-width: 320px;
+  min-height: 100dvh;
+  margin: 0;
+  font-family: $font-main;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+section {
+  padding: 120px 0;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+}
+
+.logo {
+  cursor: pointer;
+  max-width: 228px;
+}
+
+.tel {
+  font-size: 30px;
+  font-weight: 600;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding: 25px 54px;
+  background-color: $redColor;
+  border: none;
+  border-radius: 5px;
+  color: $whiteColor;
+  transition: background-color 0.3 ease;
+
+  &:hover {
+    background-color: $hoverRedColor;
+  }
+
+  &--dark {
+    background-color: $darkColor;
+
+    &:hover {
+      background-color: $hoverDarkColor;
+    }
+  }
 }
