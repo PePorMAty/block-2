@@ -47,21 +47,21 @@ section {
   align-items: center;
   font-size: 18px;
   padding: 25px 54px;
-  background-color: $redColor;
+  background-color: $bg-color-tertiary;
   border: none;
   border-radius: 5px;
-  color: $whiteColor;
+  color: $text-color-secondary;
   transition: background-color 0.3 ease;
 
   &:hover {
-    background-color: $hoverRedColor;
+    background-color: $button-color-primary-hover;
   }
 
   &--dark {
-    background-color: $darkColor;
+    background-color: $bg-color-primary;
 
     &:hover {
-      background-color: $hoverDarkColor;
+      background-color: $button-color-secondary-hover;
     }
   }
 }
