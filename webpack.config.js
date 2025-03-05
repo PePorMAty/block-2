@@ -29,6 +29,7 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
     clean: true,
     assetModuleFilename: 'assets/[hash][ext][query]',
+    publicPath: '/',
   },
   optimization: {
     minimizer: [
