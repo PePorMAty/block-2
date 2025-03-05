@@ -12,6 +12,8 @@ body {
   font-family: $font-main;
   font-weight: 400;
   line-height: 1.6;
+  color: $text-color-primary;
+  background-color: $text-color-secondary;
 }
 
 section {

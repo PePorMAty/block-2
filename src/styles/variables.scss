@@ -1,9 +1,12 @@
-@use 'fonts' as *;
-
 $font-main: 'Jost', sans-serif;
 
-$whiteColor: #fff;
-$redColor: #d52027;
-$hoverRedColor: #be1d22;
-$darkColor: #141024;
-$hoverDarkColor: #1c192c;
+$text-color-primary: #141024;
+$text-color-primary-70: #14102470;
+$text-color-secondary: #fff;
+
+$bg-color-primary: #141024;
+$bg-color-secondary: #f9f9f9;
+$bg-color-tertiary: #d52027;
+
+$button-color-primary-hover: #be1d22;
+$button-color-secondary-hover: #1c192c;
