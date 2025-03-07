@@ -13,7 +13,7 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: $text-color-primary;
-  background-color: $text-color-secondary;
+  background-color: $bg-color-primary;
 }
 
 section {
@@ -47,21 +47,21 @@ section {
   align-items: center;
   font-size: 18px;
   padding: 25px 54px;
-  background-color: $bg-color-tertiary;
+  background-color: $controls-bg-primary;
   border: none;
   border-radius: 5px;
   color: $text-color-secondary;
   transition: background-color 0.3 ease;
 
   &:hover {
-    background-color: $button-color-primary-hover;
+    background-color: $controls-color-primary-hover;
   }
 
   &--dark {
-    background-color: $bg-color-primary;
+    background-color: $controls-bg-secondary;
 
     &:hover {
-      background-color: $button-color-secondary-hover;
+      background-color: $controls-color-secondary-hover;
     }
   }
 }

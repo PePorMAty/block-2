@@ -1,12 +1,18 @@
 $font-main: 'Jost', sans-serif;
 
-$text-color-primary: #141024;
+$primary-color: #141024;
+$secondary-color: #ffffff;
+$tetriary-color: #f9f9f9;
+$accent-color: #d52027;
+
+$controls-bg-primary: $accent-color;
+$controls-color-primary-hover: #be1d22;
+$controls-bg-secondary: $primary-color;
+$controls-color-secondary-hover: #1c192c;
+
+$text-color-primary: $primary-color;
 $text-color-primary-70: #14102470;
-$text-color-secondary: #fff;
+$text-color-secondary: $secondary-color;
 
-$bg-color-primary: #141024;
-$bg-color-secondary: #f9f9f9;
-$bg-color-tertiary: #d52027;
-
-$button-color-primary-hover: #be1d22;
-$button-color-secondary-hover: #1c192c;
+$bg-color-primary: $secondary-color;
+$bg-color-secondary: $tetriary-color;
