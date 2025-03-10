@@ -43,11 +43,11 @@ section {
 
 .text {
   font-size: 24px;
-}
 
-.text-light {
-  color: $text-color-primary-70;
-  font-size: 18px;
+  &--light {
+    color: $text-color-primary-light;
+    font-size: 18px;
+  }
 }
 
 .button {

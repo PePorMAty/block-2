@@ -1,6 +1,7 @@
 $font-main: 'Jost', sans-serif;
 
 $primary-color: #141024;
+$primary-light-color: #595664;
 $secondary-color: #ffffff;
 $tetriary-color: #f9f9f9;
 $accent-color: #d52027;
@@ -11,7 +12,7 @@ $controls-bg-secondary: $primary-color;
 $controls-bg-secondary-hover: #1c192c;
 
 $text-color-primary: $primary-color;
-$text-color-primary-70: #14102470;
+$text-color-primary-light: $primary-light-color;
 $text-color-secondary: $secondary-color;
 
 $bg-color-primary: $secondary-color;
