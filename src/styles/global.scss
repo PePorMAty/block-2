@@ -41,6 +41,15 @@ section {
   }
 }
 
+.text {
+  font-size: 24px;
+}
+
+.text-light {
+  color: $text-color-primary-70;
+  font-size: 18px;
+}
+
 .button {
   display: inline-flex;
   justify-content: center;
@@ -54,14 +63,14 @@ section {
   transition: background-color 0.3 ease;
 
   &:hover {
-    background-color: $controls-color-primary-hover;
+    background-color: $controls-bg-primary-hover;
   }
 
   &--dark {
     background-color: $controls-bg-secondary;
 
     &:hover {
-      background-color: $controls-color-secondary-hover;
+      background-color: $controls-bg-secondary-hover;
     }
   }
 }
