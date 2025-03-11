@@ -1,3 +1,18 @@
-$font-main: 'Montserrat', sans-serif;
+$font-main: 'Jost', sans-serif;
 
-$someColor: #000000;
+$primary-color: #141024;
+$secondary-color: #ffffff;
+$tetriary-color: #f9f9f9;
+$accent-color: #d52027;
+
+$controls-bg-primary: $accent-color;
+$controls-bg-primary-hover: #be1d22;
+$controls-bg-secondary: $primary-color;
+$controls-bg-secondary-hover: #1c192c;
+
+$text-color-primary: $primary-color;
+$text-color-primary-light: #595664;
+$text-color-secondary: $secondary-color;
+
+$bg-color-primary: $secondary-color;
+$bg-color-secondary: $tetriary-color;
