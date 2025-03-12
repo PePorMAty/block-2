@@ -1,0 +1,33 @@
+@use '../variables' as v;
+
+.header {
+  background-color: v.$bg-cpolor-tetriary;
+  padding: 30px 10px;
+  position: sticky;
+  & a {
+    color: v.$text-color-secondary;
+  }
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav__menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__menu-item {
+  margin-right: 40px;
+
+  & a:hover {
+    text-decoration: underline;
+  }
+}
