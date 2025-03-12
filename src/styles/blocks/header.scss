@@ -1,33 +1,31 @@
-@use '../variables' as v;
+@use '../variables' as *;
 
 .header {
-  background-color: v.$bg-cpolor-tetriary;
-  padding: 30px 10px;
+  background-color: $bg-cpolor-tetriary;
+  padding: 30px 0;
   position: sticky;
-  & a {
-    color: v.$text-color-secondary;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
   }
-}
 
-.header__wrapper {
-  display: flex;
-  justify-content: space-between;
-}
+  &__nav {
+    display: flex;
+    align-items: center;
+  }
 
-.nav {
-  display: flex;
-  align-items: center;
-}
+  &__nav-menu {
+    display: flex;
+    justify-content: space-between;
+  }
 
-.nav__menu {
-  display: flex;
-  justify-content: space-between;
-}
+  &__nav-menu--item {
+    color: $text-color-secondary;
+    margin-right: 40px;
 
-.nav__menu-item {
-  margin-right: 40px;
-
-  & a:hover {
-    text-decoration: underline;
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

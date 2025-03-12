@@ -1,19 +1,16 @@
-@use '../variables.scss' as v;
+@use '../variables.scss' as *;
 
 .footer {
-  background-color: v.$bg-cpolor-tetriary;
-  padding: 40px 10px;
-  & a {
-    color: v.$text-color-secondary;
+  background-color: $bg-cpolor-tetriary;
+  padding: 40px 0;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
   }
-}
 
-.footer__wrapper {
-  display: flex;
-  justify-content: space-between;
-}
-
-.copyright {
-  font-size: 16px;
-  color: #b8b7bd;
+  &__copyright {
+    font-size: 16px;
+    color: $text-color-secondary-light;
+  }
 }
