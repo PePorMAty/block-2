@@ -19,8 +19,9 @@
     display: flex;
     justify-content: space-between;
   }
-
-  &__nav-menu--item {
+}
+.nav-menu {
+  &__item {
     color: $text-color-secondary;
     margin-right: 40px;
 
