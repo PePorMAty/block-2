@@ -1,0 +1,42 @@
+@use '../variables.scss' as *;
+
+.promo {
+  background-color: $bg-cpolor-tetriary;
+  max-height: 1080px;
+  min-height: 100vh;
+  color: $text-color-secondary;
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+
+    &-content {
+      max-width: 500px;
+      margin: 100px 0 0 0;
+    }
+
+    &-img {
+      width: 783px;
+    }
+  }
+
+  &__title {
+    font-size: 70px;
+    line-height: 160%;
+    font-weight: 700;
+    display: ruby-text;
+  }
+
+  &__text {
+    max-width: 478px;
+    font-size: 20px;
+    margin: 0 0 50px 0;
+  }
+
+  &__img {
+    position: absolute;
+    object-fit: cover;
+    max-width: 783px;
+    inset: 16px 0 0 49%;
+  }
+}

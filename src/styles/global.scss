@@ -62,28 +62,3 @@ section {
     font-size: 18px;
   }
 }
-
-.button {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px;
-  padding: 25px 54px;
-  background-color: $controls-bg-primary;
-  border: none;
-  border-radius: 5px;
-  color: $text-color-secondary;
-  transition: background-color 0.3 ease;
-
-  &:hover {
-    background-color: $controls-bg-primary-hover;
-  }
-
-  &--dark {
-    background-color: $controls-bg-secondary;
-
-    &:hover {
-      background-color: $controls-bg-secondary-hover;
-    }
-  }
-}
