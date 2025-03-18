@@ -5,15 +5,15 @@
   height: calc(100vh - 108px);
   max-height: 1080px;
   color: $text-color-secondary;
-  position: relative;
   overflow: hidden;
 
   &__wrapper {
     display: flex;
+    position: relative;
   }
 
   &__title {
-    margin-top: 181px;
+    margin-top: 230px;
   }
 
   &__subtitle {
@@ -34,7 +34,7 @@
     max-width: 783px;
     width: 100%;
     height: auto;
-    top: calc(54px + 108px);
+    top: 55px;
     left: 49%;
   }
 }
