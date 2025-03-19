@@ -18,12 +18,12 @@
   &__nav-menu {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
   }
 }
 .nav-menu {
   &__item {
     color: $text-color-secondary;
-    margin-right: 40px;
 
     &:hover {
       text-decoration: underline;
