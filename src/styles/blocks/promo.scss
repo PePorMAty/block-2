@@ -1,0 +1,43 @@
+@use '../variables.scss' as *;
+
+.promo {
+  background-color: $bg-cpolor-tetriary;
+  height: calc(100dvh - 108px);
+  max-height: 972px;
+  color: $text-color-secondary;
+  overflow: hidden;
+
+  &__wrapper {
+    display: flex;
+    position: relative;
+  }
+
+  &__text {
+    margin-top: 230px;
+  }
+
+  &__title {
+    font-size: 70px;
+    font-weight: 700;
+    max-width: 528px;
+  }
+
+  &__subtitle {
+    max-width: 478px;
+    font-size: 20px;
+  }
+
+  &__button {
+    margin-top: 50px;
+  }
+
+  &__img {
+    position: absolute;
+    object-fit: cover;
+    max-width: 783px;
+    width: 100%;
+    height: auto;
+    top: 55px;
+    left: 49%;
+  }
+}
