@@ -2,8 +2,8 @@
 
 .promo {
   background-color: $bg-cpolor-tetriary;
-  height: calc(100vh - 108px);
-  max-height: 1080px;
+  height: calc(100dvh - 108px);
+  max-height: 972px;
   color: $text-color-secondary;
   overflow: hidden;
 
@@ -12,20 +12,23 @@
     position: relative;
   }
 
-  &__title {
+  &__text {
     margin-top: 230px;
   }
 
-  &__subtitle {
+  &__title {
     font-size: 70px;
     font-weight: 700;
     max-width: 528px;
   }
 
-  &__text {
+  &__subtitle {
     max-width: 478px;
     font-size: 20px;
-    margin-bottom: 50px;
+  }
+
+  &__button {
+    margin-top: 50px;
   }
 
   &__img {
