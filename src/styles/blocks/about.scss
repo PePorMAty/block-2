@@ -4,28 +4,24 @@
   &__title {
     font-size: 30px;
     max-width: 891px;
-
-    span {
-      font-weight: 600;
-    }
   }
 
   &__info {
     margin-top: 60px;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     gap: 40px;
   }
 
   &__item {
-    flex: 1;
     flex-basis: 260px;
-  }
 
-  &__item-number {
-    color: $accent-color;
-    font-size: 70px;
-    font-weight: 600;
-    white-space: nowrap;
+    &-number {
+      color: $accent-color;
+      font-size: 70px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
   }
 }
