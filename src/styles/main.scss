@@ -2,7 +2,8 @@
 @use 'variables';
 @use 'fonts';
 @use 'global';
-@use './ui/button.scss';
+@use './ui/button';
 @use './blocks/header';
 @use './blocks/footer';
-@use './blocks/promo.scss';
+@use './blocks/promo';
+@use './blocks/about';

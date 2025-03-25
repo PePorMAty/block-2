@@ -1,0 +1,27 @@
+@use '../variables.scss' as *;
+
+.about {
+  &__title {
+    font-size: 30px;
+    max-width: 891px;
+  }
+
+  &__info {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  &__item {
+    flex-basis: 260px;
+
+    &-number {
+      color: $accent-color;
+      font-size: 70px;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+  }
+}
