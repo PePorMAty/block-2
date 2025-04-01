@@ -4,16 +4,10 @@
   position: relative;
   font-size: 16px;
   font-weight: 400;
-  line-height: 1.6;
-
-  &::before {
-    content: '';
-    position: absolute;
-    top: -30px;
-    left: 9px;
-    width: 24px;
-    height: 24px;
-  }
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  bottom: 20px;
 
   &:hover .tooltip__text {
     display: block;
@@ -22,22 +16,23 @@
   &__text {
     display: none;
     position: absolute;
-    top: -75px;
-    left: 10px;
+    bottom: 100%;
     background-color: $secondary-color;
     padding: 15px 20px;
     border-radius: 5px;
-    white-space: nowrap;
+    box-shadow: 0 2px 8px 0px $box-shadow-color;
+    max-width: 251px;
+    min-width: min-content;
+    width: max-content;
   }
 
   &__icon {
     position: absolute;
-    width: 24px;
-    height: 24px;
+    width: 100%;
+    height: 100%;
     background-color: $bg-color-light-gray;
     border-radius: 50%;
-    top: -10px;
-    left: 10px;
+    top: 50%;
     display: flex;
     justify-content: center;
     cursor: pointer;
