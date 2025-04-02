@@ -1,0 +1,39 @@
+@use '../variables.scss' as *;
+
+.tooltip {
+  position: relative;
+  font-size: 16px;
+  font-weight: 400;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  bottom: 20px;
+
+  &:hover .tooltip__text {
+    display: block;
+  }
+
+  &__text {
+    display: none;
+    position: absolute;
+    bottom: 100%;
+    background-color: $secondary-color;
+    padding: 15px 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0px $box-shadow-color;
+    max-width: 251px;
+    width: max-content;
+  }
+
+  &__icon {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: $bg-color-light-gray;
+    border-radius: 50%;
+    top: 50%;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
