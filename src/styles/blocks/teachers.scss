@@ -1,7 +1,8 @@
 @use '../variables.scss' as *;
 
 .teachers {
-  overflow: hidden;
+  padding: 122px 0 110px 0;
+
   &__slider {
     display: flex;
     flex-wrap: nowrap;
@@ -14,78 +15,83 @@
     &::-webkit-scrollbar {
       display: none;
     }
-  }
-}
 
-.teacher-item {
-  scroll-snap-align: center;
-  &__img {
-    object-fit: cover;
-    border-radius: 20px;
-    min-width: 360px;
-    height: 500px;
-  }
+    & .teacher-item {
+      scroll-snap-align: center;
+      flex-shrink: 0;
+      display: flex;
+      flex-direction: column;
 
-  &__title {
-    color: $text-color-primary;
-    font-size: 24px;
-    font-weight: 600;
-    margin-top: 20px;
-  }
+      &__img {
+        object-fit: cover;
+        border-radius: 20px;
+        width: 100%;
+        height: 500px;
+      }
 
-  &__subtitle {
-    margin-top: 10px;
-    font-size: 18px;
-  }
+      &__name {
+        color: $text-color-primary;
+        font-size: 24px;
+        font-weight: 600;
+        margin-top: 20px;
+      }
 
-  &__btn {
-    margin-top: 20px;
-    font-size: 18px;
-    color: $text-color-accent;
-  }
-}
+      &__subtitle {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        max-width: 305px;
+      }
 
-.teachers-controls {
-  margin-top: 60px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
-  &__scrollbar {
-    background-color: $bg-color-light-gray-secondary;
-    max-width: 360px;
-    width: 100%;
-    height: 5px;
-    border-radius: 40px;
-    cursor: pointer;
+      &__btn {
+        margin-top: auto;
+        font-size: 18px;
+        color: $text-color-accent;
+        text-align: left;
+      }
+    }
   }
 
-  &__buttons {
+  &-controls {
+    margin-top: 60px;
     display: flex;
-    gap: 10px;
-  }
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    &__scrollbar {
+      background-color: $controls-bg-light-gray;
+      max-width: 360px;
+      width: 100%;
+      height: 5px;
+      border-radius: 40px;
+      cursor: pointer;
 
-  &__btn {
-    &:hover {
-      opacity: 0.8;
+      & .scrollbar__progress {
+        background-color: $bg-color-tetriary;
+        max-width: 260px;
+        width: 100%;
+        height: 5px;
+        border-radius: 40px;
+        cursor: pointer;
+      }
     }
 
-    &:active {
-      opacity: 0.7;
+    &__buttons {
+      display: flex;
+      gap: 10px;
+    }
+
+    &__btn {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      &:hover {
+        opacity: 0.8;
+      }
+
+      &:active {
+        opacity: 0.7;
+      }
     }
   }
-
-  &__img {
-    min-width: 40px;
-    min-height: 40px;
-  }
-}
-
-.scrollbar__progress {
-  background-color: $bg-color-tetriary;
-  max-width: 260px;
-  width: 100%;
-  height: 5px;
-  border-radius: 40px;
-  cursor: pointer;
 }
