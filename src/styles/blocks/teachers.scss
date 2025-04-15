@@ -1,7 +1,7 @@
 @use '../variables.scss' as *;
 
 .teachers {
-  padding: 122px 0 110px 0;
+  padding-bottom: 0;
 
   &__slider {
     display: flex;
@@ -19,6 +19,7 @@
     & .teacher-item {
       scroll-snap-align: center;
       flex-shrink: 0;
+      flex-basis: 360px;
       display: flex;
       flex-direction: column;
 
@@ -40,7 +41,6 @@
         margin-top: 10px;
         margin-bottom: 20px;
         font-size: 18px;
-        max-width: 305px;
       }
 
       &__btn {
