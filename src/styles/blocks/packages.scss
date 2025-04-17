@@ -1,0 +1,66 @@
+@use '../variables.scss' as *;
+
+.packages {
+  &__items {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  & .package-card {
+    padding: 40px;
+    border: 1px solid $border-light-gray;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-basis: 360px;
+    cursor: pointer;
+    transition: ease-in-out 0.5s;
+
+    &:hover {
+      transform: scale(1.02);
+      color: $text-color-secondary;
+      background-color: $bg-color-tetriary;
+    }
+
+    &__title {
+      font-size: 30px;
+      font-weight: 600;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    &__name {
+      &::after {
+        content: '–';
+        position: absolute;
+        right: -25px;
+      }
+      &::before {
+        content: '–';
+        position: absolute;
+        left: -25px;
+      }
+    }
+
+    &__price {
+      font-size: 50px;
+      font-weight: 600;
+      margin: 0 auto;
+    }
+
+    &__description {
+      margin-top: 20px;
+      margin-bottom: 61px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    &__btn {
+      margin-top: auto;
+    }
+  }
+}
