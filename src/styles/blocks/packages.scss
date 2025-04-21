@@ -13,10 +13,11 @@
     padding: 40px;
     border: 1px solid $border-light-gray;
     border-radius: 20px;
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
     flex-basis: 360px;
     cursor: pointer;
     transition: ease-in-out 0.3s background-color;
@@ -25,6 +26,7 @@
       transform: scale(1.02);
       color: $text-color-secondary;
       background-color: $bg-color-tetriary;
+
       .package-card__title {
         &::before,
         &::after {
@@ -36,17 +38,23 @@
     &__title {
       font-size: 30px;
       font-weight: 600;
-      display: inline-flex;
-      justify-content: center;
-      gap: 8px;
-      align-items: center;
+      position: relative;
 
       &::after,
       &::before {
         content: '';
+        position: absolute;
         background-color: $bg-color-tetriary;
         width: 18px;
         height: 4px;
+        top: 50%;
+      }
+
+      &::after {
+        right: -25px;
+      }
+      &::before {
+        left: -25px;
       }
     }
 
