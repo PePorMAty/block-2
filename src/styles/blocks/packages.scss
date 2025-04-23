@@ -9,17 +9,20 @@
     gap: 40px;
   }
 
-  & .package-card {
+  .package-card {
     padding: 40px;
     border: 1px solid $border-light-gray;
     border-radius: 20px;
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     flex-basis: 360px;
     cursor: pointer;
-    transition: ease-in-out 0.3s background-color;
+    transition:
+      background-color,
+      color,
+      transform 0.3s ease-in-out;
 
     &:hover {
       transform: scale(1.02);
@@ -48,6 +51,8 @@
         width: 18px;
         height: 4px;
         top: 50%;
+        transform: translateY(-50%);
+        transition: background-color 0.3s ease-in-out;
       }
 
       &::after {
@@ -66,7 +71,7 @@
 
     &__description {
       margin-top: 20px;
-      margin-bottom: 61px;
+      margin-bottom: 52px;
       font-size: 18px;
       text-align: center;
     }
