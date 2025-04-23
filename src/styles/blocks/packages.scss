@@ -1,0 +1,83 @@
+@use '../variables.scss' as *;
+
+.packages {
+  &__items {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .package-card {
+    padding: 40px;
+    border: 1px solid $border-light-gray;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    flex-basis: 360px;
+    cursor: pointer;
+    transition:
+      transform 0.3s ease-in-out,
+      background-color 0.3s ease-in-out,
+      color 0.3s ease-in-out;
+
+    &:hover {
+      transform: scale(1.02);
+      color: $text-color-secondary;
+      background-color: $bg-color-tetriary;
+
+      .package-card__title {
+        &::before,
+        &::after {
+          background-color: $text-color-secondary;
+        }
+      }
+    }
+
+    &__title {
+      font-size: 30px;
+      font-weight: 600;
+      position: relative;
+      align-self: center;
+
+      &::after,
+      &::before {
+        content: '';
+        position: absolute;
+        background-color: $bg-color-tetriary;
+        width: 18px;
+        height: 4px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      &::after {
+        right: -25px;
+      }
+      &::before {
+        left: -25px;
+      }
+    }
+
+    &__price {
+      font-size: 50px;
+      font-weight: 600;
+      margin-top: 83px;
+    }
+
+    &__description {
+      margin-top: 20px;
+      margin-bottom: 52px;
+      font-size: 18px;
+      text-align: center;
+    }
+
+    &__btn {
+      margin-top: auto;
+    }
+  }
+}
