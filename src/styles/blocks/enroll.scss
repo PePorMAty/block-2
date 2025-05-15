@@ -3,9 +3,8 @@
 .enroll {
   background-color: $bg-color-accent;
   background-image: url('../assets/images/percent-bg.png');
-  background-repeat: no-repeat;
+  background-repeat: repeat-x;
   background-position: bottom;
-  background-size: contain;
 
   &__wrapper {
     display: flex;
@@ -46,11 +45,11 @@
       border: 2px solid $border-black;
       padding: 17px 19px;
     }
+  }
 
-    &:invalid {
-      border: 2px solid $border-error;
-      padding: 17px 19px;
-    }
+  .input--error {
+    border: 2px solid $border-error;
+    padding: 17px 19px;
   }
 
   &__button {
