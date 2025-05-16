@@ -35,21 +35,19 @@
     font-size: 18px;
   }
 
-  &__field > input {
+  &__input {
     background-color: $bg-color-primary;
     padding: 19px 20px;
     width: 100%;
     border-radius: 5px;
+    border: 2px solid $border-primary;
 
     &:focus {
-      border: 2px solid $border-black;
-      padding: 17px 19px;
+      border: 2px solid $border-error;
     }
-  }
-
-  .input--error {
-    border: 2px solid $border-error;
-    padding: 17px 19px;
+    &.--error {
+      border: 2px solid blue;
+    }
   }
 
   &__button {
