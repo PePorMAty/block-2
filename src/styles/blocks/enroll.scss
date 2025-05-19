@@ -43,10 +43,10 @@
     border: 2px solid $border-primary;
 
     &:focus {
-      border: 2px solid $border-error;
+      border: 2px solid $border-black;
     }
     &.--error {
-      border: 2px solid blue;
+      border: 2px solid $border-error;
     }
   }
 
