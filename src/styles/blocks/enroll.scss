@@ -43,10 +43,7 @@
     border: 2px solid $border-primary;
 
     &:focus {
-      border: 2px solid $border-black;
-    }
-    &.--error {
-      border: 2px solid $border-error;
+      border-color: $border-black;
     }
   }
 
@@ -56,4 +53,8 @@
     color: $text-color-secondary;
     border-radius: 5px;
   }
+}
+
+.input--error {
+  border-color: $border-error;
 }
