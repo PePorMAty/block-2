@@ -1,0 +1,60 @@
+@use '../variables.scss' as *;
+
+.enroll {
+  background-color: $bg-color-accent;
+  background-image: url('../assets/images/percent-bg.png');
+  background-repeat: repeat-x;
+  background-position: bottom;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    max-width: 478px;
+    color: $text-color-secondary;
+  }
+
+  &__title {
+    font-size: 36px;
+    font-weight: 600;
+  }
+
+  &__text {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+
+  &__form {
+    max-width: 500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 18px;
+  }
+
+  &__input {
+    background-color: $bg-color-primary;
+    padding: 19px 20px;
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid $border-primary;
+
+    &:focus {
+      border-color: $border-black;
+    }
+  }
+
+  &__button {
+    background-color: $bg-color-tetriary;
+    padding: 19px;
+    color: $text-color-secondary;
+    border-radius: 5px;
+  }
+}
+
+.input--error {
+  border-color: $border-error;
+}
